@@ -18,43 +18,43 @@ function Navbar() {
                         <span className='me-auto'></span>
                         <ul className="d-flex align-items-center navbar-nav">
                             <li className="nav-item">
-                                <span class="nav-link" to="/home" id="navbarDropdown" role="button">
+                                <span className="nav-link" to="/home" id="navbarDropdown" role="button">
                                 Free trial ends in 2 days
                                 </span>
                             </li>
                             <li className="nav-item">
-                                <Link class="nav-link" to="/home" id="navbarDropdown" role="button">
+                                <Link className="nav-link" to="/home" id="navbarDropdown" role="button">
                                 <BuyPlane />
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link class="nav-link" to="/home" id="navbarDropdown" role="button">
+                                <Link className="nav-link" to="/home" id="navbarDropdown" role="button">
                                 <Gift />
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link class="nav-link" to="/home" id="navbarDropdown" role="button">
+                                <Link className="nav-link" to="/home" id="navbarDropdown" role="button">
                                 <Notification />
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link class="nav-link" to="/home" id="navbarDropdown" role="button">
+                                <Link className="nav-link" to="/home" id="navbarDropdown" role="button">
                                 <Cake />
                                 </Link>
                             </li>
-                            <li class="nav-item dropdown">
-                                <Link class="nav-link dropdown-toggle" to="/home" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <li className="nav-item dropdown">
+                                <Link className="nav-link dropdown-toggle" to="/home" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Mukund cake shop
                                 </Link>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><Link class="dropdown-item" to="/home">Action</Link></li>
-                                    <li><Link class="dropdown-item" to="/home">Another action</Link></li>
-                                    <li><hr class="dropdown-divider"/></li>
-                                    <li><Link class="dropdown-item" to="/home">Something else here</Link></li>
+                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><Link className="dropdown-item" to="/home">Action</Link></li>
+                                    <li><Link className="dropdown-item" to="/home">Another action</Link></li>
+                                    <li><hr className="dropdown-divider"/></li>
+                                    <li><Link className="dropdown-item" to="/home">Something else here</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item"> 
-                                <Link class="nav-link" to="/home" id="navbarDropdown" role="button">
+                                <Link className="nav-link" to="/home" id="navbarDropdown" role="button">
                                 <LanguageSwap />
                                 </Link>
                             </li>
