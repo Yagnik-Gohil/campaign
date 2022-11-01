@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import {Routes,Route} from "react-router-dom";
+import Zocket from './components/Zocket';
+import Home from './components/Home';
+import Campaign from './components/Campaign';
+import Product from './components/Product';
+import Customer from './components/Customer';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container-fluid">
+      <div className="row">
+        
+        <Sidebar></Sidebar>
+        <Routes>
+          <Route path="/" element={ <Zocket/> } exact></Route>
+          <Route path="/home" element={ <Home/> } exact></Route>
+          <Route path="/campaign" element={ <Campaign/> } exact></Route>
+          <Route path="/products" element={ <Product/> } exact></Route>
+          <Route path="/customers" element={ <Customer/> } exact></Route>
+        </Routes>
+
+      </div>
     </div>
   );
 }

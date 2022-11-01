@@ -1,38 +1,182 @@
-.App {
-  text-align: center;
-}
+/* 
+    Color Scheme:
+    Get your favourite theme here: https://colorhunt.co/ and change all occurrences of below colors
+    
+        #1A1A2E Black
+        #16213E Dark Blue
+        #0F3460 Blue
+        #E94560 Red 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    Fonts:
+    https://fonts.google.com/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    go to google fonts and select one regular and one bold font and replpace the import url
+    change font-family in 
+        html, body
+        ff-jose
+        font-big
+
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Quicksand&display=swap");
+
+html,
+body {
+  margin: 0;
+  font-family: Quicksand, sans-serif;
+  /* background-color: #16213E; */
+  /* color: white; */
+}
+.active {
+  /* transition: transform 0.2s;
+  transform: scale(1.1); */
+  /* background: transparent !important; */
+  background: #1977f31a;
+  border-left: 3px solid #1977f3;
+}
+.active > span {
+  transition: transform 0.2s;
+  transform: scale(1.1);
+}
+.ff-jose {
+  font-family: "Jost", sans-serif;
+}
+.fs-10 {
+  font-size: 10px;
+}
+.font-big {
+  font-family: "Jost", sans-serif;
+  font-size: 50px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+.bg-dark {
+  background: #001738 !important;
+}
+.bg-blue {
+  background-color: #0f3460;
+}
+.text-red {
+  color: #e94560;
+}
+.text-black {
+  color: #1a1a2e;
+}
+.dropdown-item:active {
+  background-color: #0f3460 !important;
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInBottomTechnology {
+  0% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.slide-in-left {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInLeft;
+}
+.slide-in-top {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInTop;
+}
+.slide-in-bottom {
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideInBottom;
 }
 
-.App-link {
-  color: #61dafb;
+/* ===================== Transition ===================== */
+
+.animate-charcter {
+  background-image: linear-gradient(
+    -225deg,
+    #ffffff,
+    #e94560,
+    #e94560,
+    #ffffff
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+@keyframes textclip {
   to {
-    transform: rotate(360deg);
+    background-position: 200% center;
   }
+}
+
+/* ===================== Home ===================== */
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+/* ===================== Skills ===================== */
+.mw-fc {
+  max-width: fit-content;
+}
+
+/* ===================== Resume ===================== */
+li::marker {
+  color: #e94560;
+  font-size: 2em;
+}
+.blue-label {
+  background-color: #0f3460;
+  width: max-content;
+}
+.zoom-on-hover:hover {
+  transition: transform 0.2s;
+  transform: scale(1.1);
+}
+
+/* ===================== Portfolio ===================== */
+
+.portfolio-link:hover {
+  background-color: #e94560;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
 }
