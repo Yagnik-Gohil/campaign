@@ -9,7 +9,7 @@ import { ReactComponent as Notification } from '../icons/notification.svg';
 function Navbar() {
     return (
         <Fragment>
-            <nav className="navbar navbar-expand-sm bg-white navbar-light top-navbar text-black px-4 py-2">
+            <nav className="navbar navbar-expand-md bg-white navbar-light top-navbar text-black px-4 py-2">
                 <div className="container-fluid">
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                         <span className="navbar-toggler-icon"></span>
@@ -18,7 +18,7 @@ function Navbar() {
                         <span className='me-auto'></span>
                         <ul className="d-flex align-items-center navbar-nav">
                             <li className="nav-item">
-                                <span className="nav-link" to="/home" id="navbarDropdown" role="button">
+                                <span className="nav-link w-mc" to="/home" id="navbarDropdown" role="button">
                                 Free trial ends in 2 days
                                 </span>
                             </li>

@@ -15,7 +15,7 @@ function App() {
 
         <Sidebar></Sidebar>
 
-        <div className="col-sm p-0 min-vh-100">
+        <div className="col-lg p-0 min-vh-100">
           <Navbar></Navbar>
           <Routes>
             <Route path="/" element={<Zocket />} exact></Route>

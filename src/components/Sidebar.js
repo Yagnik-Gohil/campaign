@@ -23,13 +23,13 @@ function Sidebar() {
     <Fragment>
 
 
-      <div className="col-sm-auto bg-dark sticky-top px-0">
-        <div className="d-flex flex-sm-column flex-row flex-nowrap bg-dark align-items-center sticky-top py-5">
+      <div className="col-lg-auto bg-dark sticky-top px-0">
+        <div className="d-flex flex-lg-column flex-row flex-nowrap bg-dark align-items-center sticky-top res-p5">
           <Link to="/" className="d-block link-light text-decoration-none px-3" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
             <Logo />
           </Link>
           <br></br>
-          <ul className="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center justify-content-between w-100 align-items-center">
+          <ul className="nav nav-pills nav-flush flex-lg-column flex-row flex-nowrap mb-auto mx-auto text-center justify-content-between w-100 align-items-center">
 
             <NavLink to="/home" className="text-decoration-none nav-item px-3 py-2" name="home" >
               <span className="nav-link py-0" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
