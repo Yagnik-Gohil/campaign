@@ -16,8 +16,24 @@ function Sidebar() {
   const route = useLocation();
   const [active, setActive] = useState("home")
 
+  const getPathName = (route) => {
+    if (route.includes("home")) {
+      return "home";
+    }
+    else if (route.includes("campaign")) {
+      return "campaign";
+    }
+    else if (route.includes("products")) {
+      return "products";
+    }
+    else if (route.includes("customers")) {
+      return "customers";
+    }
+
+  }
+
   useEffect(() => {
-    setActive(route.pathname.replace("/",""))
+    setActive(getPathName(route.pathname))
   }, [route])
   return (
     <Fragment>
