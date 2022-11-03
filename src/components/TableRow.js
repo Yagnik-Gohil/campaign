@@ -27,7 +27,7 @@ function TableRow({ data }) {
     }
     return (
         <Fragment>
-            <tr className="table-hover">
+            <tr className="table-row">
                 <td>
                     <div className="form-check">
                         <input className="form-check-input" type="checkbox" value="" />

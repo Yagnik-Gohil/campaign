@@ -105,7 +105,10 @@ thead {
   height: 48px;
   background: #F8F8F8;
 }
-.table-hover:hover{
+.table-row{
+  vertical-align: middle;
+}
+.table-row:hover{
   background: #F8F8F8 !important;
 }
 table th:first-child{
